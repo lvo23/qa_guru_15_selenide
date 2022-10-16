@@ -23,7 +23,5 @@ public class SelenideWikiTests {
         $(".js-wiki-more-pages-link").click();
         $("#wiki-pages-box").shouldHave(text("SoftAssertions")).$(linkText("SoftAssertions")).click();
         $(".markdown-body").shouldHave(text("Using JUnit5 extend test class"));
-
     }
-
 }
