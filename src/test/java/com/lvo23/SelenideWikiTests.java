@@ -18,16 +18,10 @@ public class SelenideWikiTests {
     void JUnitExampleOnSoftAssertionsPageTest() {
 
         open("https://github.com/selenide/selenide");
-
         $("#wiki-tab").click();
-
         $(".markdown-body h1").shouldHave(text("Welcome to the selenide wiki!"));
-
         $(".js-wiki-more-pages-link").click();
-
-        $("#wiki-pages-box").shouldHave(text("SoftAssertions")).$(linkText("SoftAssertions"))
-                .click();
-
+        $("#wiki-pages-box").shouldHave(text("SoftAssertions")).$(linkText("SoftAssertions")).click();
         $(".markdown-body").shouldHave(text("Using JUnit5 extend test class"));
 
     }
