@@ -17,12 +17,6 @@ import com.codeborne.selenide.Configuration;
  */
 public class SelenideHWTests {
 
-    @BeforeEach
-    void configure() {
-
-        Configuration.holdBrowserOpen = true;
-    }
-
     @Test
     @DisplayName("Проверяем, что страница с инфой для предприятий открылась")
     void checkEnterpriseSolutionPageIsOpened() {
